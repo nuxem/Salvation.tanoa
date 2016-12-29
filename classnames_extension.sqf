@@ -50,12 +50,6 @@ air_vehicles_extension = [
 ["MELB_H6M",0,0,5]
 ];
 
-heavy_vehicles_overwrite = false;
-heavy_vehicles_extension = nil;
-
-air_vehicles_overwrite = false;
-air_vehicles_extension = nil;
-
 static_vehicles_overwrite = false;
 static_vehicles_extension = nil;
 
