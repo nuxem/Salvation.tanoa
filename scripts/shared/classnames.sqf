@@ -302,7 +302,7 @@ if ( opfor_battlegroup_vehicles_overwrite ) then { opfor_battlegroup_vehicles = 
 
 opfor_battlegroup_vehicles_low_intensity = [
 	"O_T_APC_Tracked_02_cannon_ghex_F",
-	"O_T_APC_Wheeled_02_rcws_F",
+	"O_T_APC_Wheeled_02_rcws_ghex_F",
 	"O_T_MRAP_02_hmg_ghex_F",
 	"O_T_MRAP_02_hmg_ghex_F",
 	"O_T_MRAP_02_gmg_ghex_F",
@@ -336,7 +336,7 @@ if ( opfor_choppers_overwrite ) then { opfor_choppers = opfor_choppers_extension
 
 opfor_air = [
 	"O_Plane_CAS_02_F",
-	"O_T_VTOL_02_infantry_F"
+	"O_T_VTOL_02_infantry_ghex_F"
 ];
 if ( isNil "opfor_air_extension" ) then { opfor_air_extension = [] };
 if ( isNil "opfor_air_overwrite" ) then { opfor_air_overwrite = false };
