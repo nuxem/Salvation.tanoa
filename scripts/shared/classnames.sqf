@@ -20,23 +20,25 @@ if ( isNil "crewman_classname" ) then { crewman_classname = "B_crew_F" };
 if ( isNil "pilot_classname" ) then { pilot_classname = "B_Helipilot_F" };
 
 infantry_units = [
-	["B_T_soldier_F",2,0,0],
-	["B_T_soldier_GL_F",3,0,0],
-	["B_T_soldier_AR_F",3,0,0],
-	["B_T_medic_F",3,0,0],
-	["B_T_soldier_M_F",3,0,0],
-	["B_T_engineer_F",3,0,0],
-	["B_T_soldier_LAT_F",4,0,0],
-	["B_T_soldier_AA_F",5,10,0],
-	["B_T_soldier_AT_F",5,10,0],
-	["B_T_sniper_F",10,0,0],
-	["B_T_soldier_PG_F",2,0,0],
-	["B_T_crew_F",1,0,0],
-	["B_T_helipilot_F",1,0,0],
-	["B_T_CTRG_Soldier_tna_F",3,0,0],
-	["B_T_CTRG_medic_tna_F",5,0,0],
-	["B_T_CTRG_Soldier_LAT_tna_F",5,10,0],
-	["B_T_CTRG_Soldier_M_tna_F",7,0,0],
+	["B_soldier_F",2,0,0],
+	["B_soldier_GL_F",3,0,0],
+	["B_soldier_AR_F",3,0,0],
+	["B_medic_F",3,0,0],
+	["B_soldier_M_F",3,0,0],
+	["B_engineer_F",3,0,0],
+	["B_soldier_LAT_F",4,0,0],
+	["B_Sharpshooter_F",5,0,0],
+	["B_HeavyGunner_F",5,0,0],
+	["B_recon_F",4,0,0],
+	["B_recon_medic_F",4,0,0],
+	["B_recon_M_F",5,0,0],
+	["B_Recon_Sharpshooter_F",8,0,0],
+	["B_soldier_AA_F",5,10,0],
+	["B_soldier_AT_F",5,10,0],
+	["B_sniper_F",10,0,0],
+	["B_soldier_PG_F",2,0,0],
+	["B_crew_F",1,0,0],
+	["B_helipilot_F",1,0,0]
 ];
 if ( isNil "infantry_units_extension" ) then { infantry_units_extension = [] };
 if ( isNil "infantry_units_overwrite" ) then { infantry_units_overwrite = false };
@@ -170,29 +172,29 @@ if ( isNil "support_vehicles_overwrite" ) then { support_vehicles_overwrite = fa
 if ( support_vehicles_overwrite ) then { support_vehicles = support_vehicles_extension; } else { support_vehicles = support_vehicles + support_vehicles_extension; };
 
 if ( isNil "blufor_squad_inf_light" ) then { blufor_squad_inf_light = [] };
-if ( count blufor_squad_inf_light == 0 ) then { blufor_squad_inf_light = [ "B_T_Soldier_SL_F","B_T_Soldier_TL_F","B_T_Soldier_GL_F","B_T_soldier_AR_F","B_T_Soldier_GL_F","B_T_medic_F","B_T_Soldier_LAT_F","B_T_Soldier_F","B_T_Soldier_F" ]; };
+if ( count blufor_squad_inf_light == 0 ) then { blufor_squad_inf_light = [ "B_Soldier_SL_F","B_Soldier_TL_F","B_Soldier_GL_F","B_soldier_AR_F","B_Soldier_GL_F","B_medic_F","B_Soldier_LAT_F","B_Soldier_F","B_Soldier_F" ]; };
 if ( isNil "blufor_squad_inf" ) then { blufor_squad_inf = [] };
-if ( count blufor_squad_inf == 0 ) then { blufor_squad_inf = [ "B_T_Soldier_TL_F","B_T_Soldier_TL_F","B_T_Soldier_AR_F","B_T_Soldier_AR_F","B_T_medic_F","B_T_Soldier_GL_F","B_T_Soldier_LAT_F","B_T_Soldier_LAT_F","B_T_soldier_M_F","B_T_soldier_M_F" ]; };
+if ( count blufor_squad_inf == 0 ) then { blufor_squad_inf = [ "B_Soldier_SL_F","B_Soldier_TL_F","B_Soldier_AR_F","B_HeavyGunner_F","B_medic_F","B_Soldier_GL_F","B_Soldier_LAT_F","B_Soldier_LAT_F","B_soldier_M_F","B_Sharpshooter_F" ]; };
 if ( isNil "blufor_squad_at" ) then { blufor_squad_at = [] };
-if ( count blufor_squad_at == 0 ) then { blufor_squad_at = [ "B_T_Soldier_TL_F","B_T_soldier_AT_F","B_T_soldier_AT_F","B_T_soldier_AT_F","B_T_medic_F","B_T_soldier_F"]; };
+if ( count blufor_squad_at == 0 ) then { blufor_squad_at = [ "B_Soldier_SL_F","B_soldier_AT_F","B_soldier_AT_F","B_soldier_AT_F","B_medic_F","B_soldier_F" ]; };
 if ( isNil "blufor_squad_aa" ) then { blufor_squad_aa = [] };
-if ( count blufor_squad_aa == 0 ) then { blufor_squad_aa = [ "B_T_Soldier_TL_F","B_T_soldier_AA_F","B_T_soldier_AA_F","B_T_soldier_AA_F","B_T_medic_F","B_T_soldier_F" ]; };
+if ( count blufor_squad_aa == 0 ) then { blufor_squad_aa = [ "B_Soldier_SL_F","B_soldier_AA_F","B_soldier_AA_F","B_soldier_AA_F","B_medic_F","B_soldier_F" ]; };
 if ( isNil "blufor_squad_recon" ) then { blufor_squad_recon = [] };
-if ( count blufor_squad_recon == 0 ) then { blufor_squad_recon = [ "B_T_CTRG_Soldier_TL_tna_F","B_T_CTRG_Soldier_tna_F","B_T_CTRG_Soldier_Exp_tna_F","B_T_CTRG_medic_tna_F","B_T_CTRG_Soldier_LAT_tna_F","B_T_CTRG_Soldier_LAT_tna_F","B_T_CTRG_Soldier_M_tna_F","B_T_CTRG_Soldier_M_tna_F","B_T_CTRG_Soldier_tna_F" ]; };
+if ( count blufor_squad_recon == 0 ) then { blufor_squad_recon = [ "B_recon_TL_F","B_recon_F","B_recon_exp_F","B_recon_medic_F","B_recon_LAT_F","B_recon_LAT_F","B_recon_M_F","B_Recon_Sharpshooter_F","B_recon_F" ]; };
 if ( isNil "blufor_squad_para" ) then { blufor_squad_para = [] };
-if ( count blufor_squad_para == 0 ) then { blufor_squad_para = [ "B_T_soldier_PG_F","B_T_soldier_PG_F","B_T_soldier_PG_F","B_T_soldier_PG_F","B_T_soldier_PG_F","B_T_soldier_PG_F","B_T_soldier_PG_F","B_T_soldier_PG_F","B_T_soldier_PG_F","B_T_soldier_PG_F" ]; };
+if ( count blufor_squad_para == 0 ) then { blufor_squad_para = [ "B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F" ]; };
 if ( isNil "blufor_squad_inf_light" ) then { blufor_squad_inf_light = [] };
-if ( count blufor_squad_inf_light == 0 ) then { blufor_squad_inf_light = [ "B_T_Soldier_SL_F","B_T_Soldier_TL_F","B_T_Soldier_GL_F","B_T_soldier_AR_F","B_T_Soldier_GL_F","B_T_medic_F","B_T_Soldier_LAT_F","B_T_Soldier_F" ]; };
+if ( count blufor_squad_inf_light == 0 ) then { blufor_squad_inf_light = [ "B_Soldier_SL_F","B_Soldier_TL_F","B_Soldier_GL_F","B_soldier_AR_F","B_Soldier_GL_F","B_medic_F","B_Soldier_LAT_F","B_Soldier_F","B_Soldier_F"]; };
 if ( isNil "uavs" ) then { uavs = [] }; uavs = [] + uavs + [ "B_UAV_01_F","B_UAV_02_F","B_UAV_02_CAS_F","B_UGV_01_F","B_UGV_01_rcws_F","B_UAV_03_F" ];
 if ( isNil "elite_vehicles_extension" ) then { elite_vehicles_extension = [] }; elite_vehicles = [] + elite_vehicles_extension + ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F","B_T_VTOL_01_armed_F","B_T_UAV_03_F","B_UAV_02_CAS_F","B_T_MBT_01_TUSK_F","B_T_APC_Tracked_01_AA_F","B_UAV_02_F"];
 if ( isNil "ai_resupply_sources_extension" ) then { ai_resupply_sources_extension = [] };
-ai_resupply_sources = [] + ai_resupply_sources_extension + [ Respawn_truck_typename, huron_typename, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_T_APC_Tracked_01_CRV_F", "B_T_Truck_01_ammo_F" ];
+ai_resupply_sources = [] + ai_resupply_sources_extension + [ Respawn_truck_typename, huron_typename, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F" ];
 if ( isNil "vehicle_repair_sources_extension" ) then { vehicle_repair_sources_extension = [] };
-vehicle_repair_sources = [] + vehicle_repair_sources_extension + [ "B_T_APC_Tracked_01_CRV_F", "C_Offroad_01_repair_F", "B_T_Truck_01_Repair_F", "B_Slingload_01_Repair_F" ];
+vehicle_repair_sources = [] + vehicle_repair_sources_extension + [ "B_APC_Tracked_01_CRV_F", "C_Offroad_01_repair_F", "B_Truck_01_Repair_F", "B_Slingload_01_Repair_F" ];
 if ( isNil "vehicle_rearm_sources_extension" ) then { vehicle_rearm_sources_extension = [] };
-vehicle_rearm_sources = [] + vehicle_rearm_sources_extension + [ "B_T_APC_Tracked_01_CRV_F", "B_T_Truck_01_ammo_F", "B_Slingload_01_Ammo_F" ];
+vehicle_rearm_sources = [] + vehicle_rearm_sources_extension + [ "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F", "B_Slingload_01_Ammo_F" ];
 if ( isNil "vehicle_refuel_sources_extension" ) then { vehicle_refuel_sources_extension = [] };
-vehicle_refuel_sources = [] + vehicle_refuel_sources_extension +  [ "B_T_APC_Tracked_01_CRV_F", "B_T_Truck_01_fuel_F", "B_Slingload_01_Fuel_F" ];
+vehicle_refuel_sources = [] + vehicle_refuel_sources_extension +  [ "B_APC_Tracked_01_CRV_F", "B_Truck_01_fuel_F", "B_Slingload_01_Fuel_F" ];
 squads = [
 	[blufor_squad_inf_light,20,0,0],
 	[blufor_squad_inf,30,0,0],
@@ -470,7 +472,7 @@ air_vehicles_classnames = [] + opfor_choppers;
 markers_reset = [99999,99999,0];
 zeropos = [0,0,0];
 squads_names = [ localize "STR_LIGHT_RIFLE_SQUAD", localize "STR_RIFLE_SQUAD", localize "STR_AT_SQUAD", localize "STR_AA_SQUAD",  localize "STR_RECON_SQUAD", localize "STR_PARA_SQUAD" ];
-boats_names = [ "B_Boat_Transport_01_F", "B_Boat_Armed_01_minigun_F", "B_SDV_01_F" ];
+boats_names = [ "B_Boat_Transport_01_F", "B_Boat_Armed_01_minigun_F" ];
 ammobox_transports_typenames = [];
 { ammobox_transports_typenames pushback (_x select 0) } foreach box_transport_config;
 ammobox_transports_typenames = [ ammobox_transports_typenames , { [ _x ] call F_checkClass } ]  call BIS_fnc_conditionalSelect;
