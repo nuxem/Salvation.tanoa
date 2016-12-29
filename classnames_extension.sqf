@@ -33,118 +33,54 @@ pilot_classname = nil;					// Default "B_Helipilot_F";
 // If overwrite is set to true, then the extension list will entirely replace the original list defined in classnames.sqf. Otherwise it will be appended to it.
 // Useful for total conversions to RHS and such, without having to alter the original file.
 infantry_units_overwrite = false;
-infantry_units_extension = [
-
-];
+infantry_units_extension = nil;
 
 light_vehicles_overwrite = false;
-light_vehicles_extension = [
-	["rhsusf_m998_w_4dr",0,0,2],
-	["rhsusf_rg33_m2_d",0,10,3],
-	["fsf_fnk_norm_ce",0,0,3],
-	["FCFramework_fnk_norm_ce",0,0,3],
-	["I_MRAP_03_F",0,0,3],
-	["I_MRAP_03_hmg_F",0,10,3],
-	["I_MRAP_03_gmg_F",0,20,3],
-	["fsf_fnk_hmg_ce",0,10,3],
-	["FCFramework_fnk_hmg_ce",0,10,3],
-	["FCFramework_fnk_hmg_dsrt",0,10,3]
-];
+light_vehicles_extension = nil;
 
 heavy_vehicles_overwrite = false;
-heavy_vehicles_extension = [
-	["I_APC_Wheeled_03_cannon_F",0,50,10],
-	["FCFramework_pandur_wdld",0,50,10],
-	["I_APC_tracked_03_cannon_F",0,40,15],
-	["FCFramework_fv510_wdld",0,40,15],
-	["FCFramework_fv510_dsrt",0,40,15],
-	["RHS_M2A3_BUSKIII_wd",0,55,15],
-	["Steve_MBT_Kuma",0,100,25],
-	["I_MBT_03_cannon_F",0,100,25],
-	["rhsusf_m1a2sep1tuskiid_usarmy",0,100,25],
-	["Burnes_FV4034_01",0,250,40]
-];
+heavy_vehicles_extension = nil;
 
 air_vehicles_overwrite = false;
 air_vehicles_extension = [
-	["FCFramework_aw159_t",0,0,12],
-	["FCFramework_aw159_a",0,50,12],
-	["I_Heli_light_03_unarmed_F",0,0,12],
-	["I_Heli_light_03_F",0,50,12],
-	["JNS_Skycrane_BLU_Black",0,0,18],
-	["RHS_CH_47F",0,20,20],
-	["FCFramework_eh101_gr",0,0,25],
-	["I_Heli_Transport_02_F",0,0,25],
-	["MV22",0,0,25],
-	["RHS_AH1Z_wd_GS",0,175,30],
-	["H_RAH66",0,200,30],
-	["RHS_AH64D_wd",0,400,50],
-	["FIR_F16C",0,100,30],
-	["FIR_F15E",0,200,50],
-	["JS_JC_FA18E",0,350,40],
-	["JS_JC_FA18F",0,350,40],
-	["sab_C130_CSP",0,0,30],
-	["sab_C130_J",0,0,30],
-	["usaf_f22",0,500,75],
-	["USAF_F35A",0,600,75],
-	["I_Plane_Fighter_03_AA_F",0,50,30],
-	["I_Plane_Fighter_03_CAS_F",0,100,30]
+["MELB_MH6M",0,0,8],
+["MELB_AH6M_L",0,30,10],
+["MELB_AH6M_M",0,40,20],
+["MELB_AH6M_H",0,75,20],
+["MELB_H6M",0,0,5]
 ];
 
 static_vehicles_overwrite = false;
-static_vehicles_extension = [
-
-];
+static_vehicles_extension = nil;
 
 buildings_overwrite = false;
-buildings_extension = [
-
-];
+buildings_extension = nil;
 
 support_vehicles_overwrite = false;		// If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there
-support_vehicles_extension = [
-	["JNS_Skycrane_Pod_Bench_BLU_Black",5,0,0],
-	["JNS_Skycrane_Pod_Ammo_BLU_Black",5,0,0],
-	["JNS_Skycrane_Pod_Medical_BLU_Black",5,0,0],
-	["JNS_Skycrane_Pod_Repair_BLU_Black",5,0,0],
-	["JNS_Skycrane_Pod_Transport_BLU_Black",5,0,0]
-];
+support_vehicles_extension = nil;
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
 uavs = [
-
 ];
 
 // Pre-made squads for the commander build menu. These shouldn't exceed 10 members.
 // Light infantry squad
-blufor_squad_inf_light = [
-
-];
+blufor_squad_inf_light = nil;
 
 // Heavy infantry squad
-blufor_squad_inf = [
-
-];
+blufor_squad_inf = nil;
 
 // AT specialists squad
-blufor_squad_at = [
-
-];
+blufor_squad_at = nil;
 
 // AA specialists squad
-blufor_squad_aa = [
-
-];
+blufor_squad_aa = nil;
 
 // Force recon squad
-blufor_squad_recon = [
-
-];
+blufor_squad_recon = nil;
 
 // Paratroopers squad
-blufor_squad_para = [
-
-];
+blufor_squad_para = nil;
 
 
 
@@ -186,66 +122,40 @@ opfor_flag = nil;
 
 // Militia infantry. Soldier classnames the game will pick from randomly
 militia_squad_overwrite = false;
-militia_squad_extension = [
-
-];
+militia_squad_extension = nil;
 
 // Militia vehicles to choose from
 militia_vehicles_overwrite = false;
-militia_vehicles_extension = [
-	"rhs_btr70_chdkz",
-	"rhs_zsu234_chdkz",
-	"I_MU_mercs_Offroad_01_armed_F",
-	"I_MU_mercs_Offroad_01_armed_F",
-	"LOP_AFR_BTR60",
-	"LOP_AFR_M113_W",
-	"LOP_AFR_T72BA",
-	"I_MU_mercs_Offroad_01_armed_F"
-];
+militia_vehicles_extension = nil;
 
 // All the vehicles that can spawn as sector defenders and patrols
 opfor_vehicles_overwrite = false;
-opfor_vehicles_extension = [
-
-];
+opfor_vehicles_extension = nil;
 
 // Same with lighter choices to be used  when the alert level is low
 opfor_vehicles_low_intensity_overwrite = false;
-opfor_vehicles_low_intensity_extension = [
-
-];
+opfor_vehicles_low_intensity_extension = nil;
 
 // All the vehicles that can spawn as battlegroup members
 opfor_battlegroup_vehicles_overwrite = false;
-opfor_battlegroup_vehicles_extension = [
-
-];
+opfor_battlegroup_vehicles_extension = nil;
 
 // Same with lighter choices to be used  when the alert level is low
 opfor_battlegroup_vehicles_low_intensity_overwrite = false;
-opfor_battlegroup_vehicles_low_intensity_extension = [
-
-];
+opfor_battlegroup_vehicles_low_intensity_extension = nil;
 
 // All the vehicles that can spawn as battlegroup members (see above) and also hold 8 soldiers as passengers.
 // If something in here can't hold all 8 soldiers then buggy behaviours may occur
 opfor_troup_transports_overwrite = false;
-opfor_troup_transports_extension = [
-
-];
+opfor_troup_transports_extension = nil;
 
 // Battlegroup members that will need to spawn in flight. Should be only helos but, who knows
 opfor_choppers_overwrite = false;
-opfor_choppers_extension = [
-
-];
+opfor_choppers_extension = nil;
 
 // Opfor military aircrafts
 opfor_air_overwrite = false;
-opfor_air_extension = [
-
-];
-
+opfor_air_extension = nil;
 
 
 
@@ -284,49 +194,13 @@ vehicle_refuel_sources_extension = [
 
 // Elite vehicles that should be unlocked through military base capture.
 elite_vehicles_extension = [
-	"Steve_MBT_Kuma",
-	"Burnes_FV4034_01",
-	"RHS_AH1Z_wd_GS",
-	"H_RAH66",
-	"RHS_AH64D_wd",
-	"JS_JC_FA18E",
-	"JS_JC_FA18F",
-	"FCFramework_pandur_wdld",
-	"RHS_M2A3_BUSKIII_wd",
-	"usaf_f22",
-	"USAF_F35A",
-	"rhsusf_m1a2sep1tuskiid_usarmy",
-	"FIR_F16C",
-	"FIR_F15E"
+	"MELB_AH6M_H"
 ];
 
 // Blacklisted arsenal items such as deployable weapons  that should be bought instead
 // Useless if you're using a predefined arsenal in arsenal.sqf
 blacklisted_from_arsenal_extension = [
-	"RHS_Podnos_Bipod_Bag",
-	"RHS_Podnos_Gun_Bag",
-	"RHS_Metis_Gun_Bag",
-	"RHS_Metis_Tripod_Bag",
-	"RHS_AGS30_Tripod_Bag",
-	"RHS_AGS30_Gun_Bag",
-	"RHS_DShkM_Gun_Bag",
-	"RHS_DShkM_TripodHigh_Bag",
-	"RHS_DShkM_TripodLow_Bag",
-	"RHS_Kord_Tripod_Bag",
-	"RHS_Kord_Gun_Bag",
-	"RHS_M2_Gun_Bag",
-	"RHS_M2_Tripod_Bag",
-	"rhs_M252_Gun_Bag",
-	"rhs_M252_Bipod_Bag",
-	"RHS_M2_MiniTripod_Bag",
-	"RHS_Mk19_Gun_Bag",
-	"RHS_Mk19_Tripod_Bag",
-	"RHS_NSV_Tripod_Bag",
-	"RHS_NSV_Gun_Bag",
-	"RHS_SPG9_Gun_Bag",
-	"RHS_SPG9_Tripod_Bag",
-	"rhs_Tow_Gun_Bag",
-	"rhs_TOW_Tripod_Bag"
+
 ];
 
 // Configuration for ammo boxes transport

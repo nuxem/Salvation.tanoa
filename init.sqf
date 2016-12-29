@@ -32,7 +32,7 @@ if (!isDedicated && hasInterface) then {
 };
 
 // Interior lighting init
-nul=[] execVM "IntLight.sqf";
+//nul=[] execVM "IntLight.sqf";
 
 //Init jump feature
 execvm "jump.sqf";
