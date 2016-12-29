@@ -156,7 +156,7 @@ support_vehicles = [
 	[Respawn_truck_typename,20,0,5],
 	[FOB_box_typename,30,50,0],
 	[FOB_truck_typename,30,50,5],
-	["B_T_APC_Tracked_01_CRV_F",0,30,10],
+	["B_APC_Tracked_01_CRV_F",0,30,10],
 	["C_Offroad_01_repair_F",5,0,2],
 	["B_T_Truck_01_Repair_F",10,0,5],
 	["B_T_Truck_01_fuel_F",10,0,5],
@@ -190,9 +190,9 @@ if ( isNil "elite_vehicles_extension" ) then { elite_vehicles_extension = [] }; 
 if ( isNil "ai_resupply_sources_extension" ) then { ai_resupply_sources_extension = [] };
 ai_resupply_sources = [] + ai_resupply_sources_extension + [ Respawn_truck_typename, huron_typename, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F" ];
 if ( isNil "vehicle_repair_sources_extension" ) then { vehicle_repair_sources_extension = [] };
-vehicle_repair_sources = [] + vehicle_repair_sources_extension + [ "B_APC_Tracked_01_CRV_F", "C_Offroad_01_repair_F", "B_Truck_01_Repair_F", "B_Slingload_01_Repair_F", "JNS_Skycrane_Pod_Repair_BLU_Black" ];
+vehicle_repair_sources = [] + vehicle_repair_sources_extension + [ "B_APC_Tracked_01_CRV_F", "C_Offroad_01_repair_F", "B_Truck_01_Repair_F", "B_Slingload_01_Repair_F" ];
 if ( isNil "vehicle_rearm_sources_extension" ) then { vehicle_rearm_sources_extension = [] };
-vehicle_rearm_sources = [] + vehicle_rearm_sources_extension + [ "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F", "B_Slingload_01_Ammo_F", "JNS_Skycrane_Pod_Ammo_BLU_Black" ];
+vehicle_rearm_sources = [] + vehicle_rearm_sources_extension + [ "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F", "B_Slingload_01_Ammo_F" ];
 if ( isNil "vehicle_refuel_sources_extension" ) then { vehicle_refuel_sources_extension = [] };
 vehicle_refuel_sources = [] + vehicle_refuel_sources_extension +  [ "B_APC_Tracked_01_CRV_F", "B_Truck_01_fuel_F", "B_Slingload_01_Fuel_F" ];
 squads = [
