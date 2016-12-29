@@ -1,4 +1,4 @@
-FCLIB_save_key = "FCFramework_salvation_SAVEGAME_TANOA";	// change this value if you want different savegames on different map
+FCLIB_save_key = "FCFramework_salvation_SAVEGAME";	// change this value if you want different savegames on different map
 
 FCLIB_side_friendly = WEST;
 FCLIB_side_enemy = EAST;
@@ -12,7 +12,7 @@ FCLIB_color_enemy_bright = "ColorRED";
 FCLIB_sector_size = 1000;
 FCLIB_capture_size = 175;
 FCLIB_radiotower_size = 2500;
-FCLIB_recycling_percentage = 0.95;
+FCLIB_recycling_percentage = 0.65;
 FCLIB_endgame = 0;
 FCLIB_vulnerability_timer = 1200;
 FCLIB_defended_buildingpos_part = 0.4;
