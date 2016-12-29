@@ -335,7 +335,11 @@ if ( isNil "opfor_choppers_overwrite" ) then { opfor_choppers_overwrite = false 
 if ( opfor_choppers_overwrite ) then { opfor_choppers = opfor_choppers_extension; } else { opfor_choppers = opfor_choppers + opfor_choppers_extension; };
 
 opfor_air = [
+<<<<<<< HEAD
 	"O_Plane_CAS_02_F",
+=======
+	"O_Plane_CAS_02_F"
+>>>>>>> parent of d888493... V02b6
 ];
 if ( isNil "opfor_air_extension" ) then { opfor_air_extension = [] };
 if ( isNil "opfor_air_overwrite" ) then { opfor_air_overwrite = false };
