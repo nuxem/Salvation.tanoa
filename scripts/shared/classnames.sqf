@@ -14,7 +14,7 @@ if ( isNil "Respawn_truck_typename" ) then { Respawn_truck_typename = "B_T_Truck
 if ( isNil "huron_typename" ) then { huron_typename = "B_Heli_Transport_03_unarmed_F"; };
 if ( isNil "ammobox_b_typename" ) then { ammobox_b_typename = "Box_NATO_AmmoVeh_F"; };
 if ( isNil "ammobox_o_typename" ) then { ammobox_o_typename = "Box_East_AmmoVeh_F"; };
-if ( isNil "opfor_ammobox_transport" ) then { opfor_ammobox_transport = "O_Truck_03_transport_F"; };
+if ( isNil "opfor_ammobox_transport" ) then { opfor_ammobox_transport = "O_T_Truck_03_transport_ghex_F"; };
 if ( isNil "commander_classname" ) then { commander_classname = "B_officer_F"; };
 if ( isNil "crewman_classname" ) then { crewman_classname = "B_crew_F" };
 if ( isNil "pilot_classname" ) then { pilot_classname = "B_Helipilot_F" };
@@ -256,69 +256,69 @@ if ( isNil "militia_vehicles_overwrite" ) then { militia_vehicles_overwrite = fa
 if ( militia_vehicles_overwrite ) then { militia_vehicles = militia_vehicles_extension; } else { militia_vehicles = militia_vehicles + militia_vehicles_extension; };
 
 opfor_vehicles = [
-	"O_APC_Tracked_02_cannon_F",
-	"O_APC_Wheeled_02_rcws_F",
-	"O_APC_Tracked_02_cannon_F",
-	"O_APC_Wheeled_02_rcws_F",
-	"O_MBT_02_cannon_F",
-	"O_MBT_02_cannon_F",
-	"O_APC_Tracked_02_AA_F",
-	"O_MRAP_02_gmg_F",
-	"O_MRAP_02_hmg_F",
-	"O_MRAP_02_hmg_F"
+	"O_T_APC_Tracked_02_cannon_ghex_F",
+	"O_T_APC_Wheeled_02_rcws_ghex_F",
+	"O_T_APC_Tracked_02_cannon_ghex_F",
+	"O_T_APC_Wheeled_02_rcws_ghex_F",
+	"O_T_MBT_02_cannon_ghex_F",
+	"O_T_MBT_02_cannon_ghex_F",
+	"O_T_APC_Tracked_02_AA_ghex_F",
+	"O_T_MRAP_02_gmg_ghex_F",
+	"O_T_MRAP_02_hmg_ghex_F",
+	"O_T_MRAP_02_hmg_ghex_F"
 ];
 if ( isNil "opfor_vehicles_extension" ) then { opfor_vehicles_extension = [] };
 if ( isNil "opfor_vehicles_overwrite" ) then { opfor_vehicles_overwrite = false };
 if ( opfor_vehicles_overwrite ) then { opfor_vehicles = opfor_vehicles_extension; } else { opfor_vehicles = opfor_vehicles + opfor_vehicles_extension; };
 
 opfor_vehicles_low_intensity = [
-	"O_APC_Tracked_02_cannon_F",
-	"O_APC_Wheeled_02_rcws_F",
-	"O_MRAP_02_hmg_F",
-	"O_MRAP_02_hmg_F",
-	"O_MRAP_02_gmg_F"
+	"O_T_APC_Tracked_02_cannon_ghex_F",
+	"O_T_APC_Wheeled_02_rcws_ghex_F",
+	"O_T_MRAP_02_hmg_ghex_F",
+	"O_T_MRAP_02_hmg_ghex_F",
+	"O_T_MRAP_02_gmg_ghex_F"
 ];
 if ( isNil "opfor_vehicles_low_intensity_extension" ) then { opfor_vehicles_low_intensity_extension = [] };
 if ( isNil "opfor_vehicles_low_intensity_overwrite" ) then { opfor_vehicles_low_intensity_overwrite = false };
 if ( opfor_vehicles_low_intensity_overwrite ) then { opfor_vehicles_low_intensity = opfor_vehicles_low_intensity_extension; } else { opfor_vehicles_low_intensity = opfor_vehicles_low_intensity + opfor_vehicles_low_intensity_extension; };
 
 opfor_battlegroup_vehicles = [
-	"O_MRAP_02_hmg_F",
-	"O_MRAP_02_gmg_F",
-	"O_APC_Tracked_02_cannon_F",
-	"O_APC_Wheeled_02_rcws_F",
-	"O_Truck_03_covered_F",
-	"O_MBT_02_cannon_F",
-	"O_MBT_02_cannon_F",
-	"O_APC_Tracked_02_AA_F",
+	"O_T_MRAP_02_hmg_ghex_F",
+	"O_T_MRAP_02_gmg_ghex_F",
+	"O_T_APC_Tracked_02_cannon_ghex_F",
+	"O_T_APC_Wheeled_02_rcws_ghex_F",
+	"O_T_Truck_03_covered_ghex_F",
+	"O_T_MBT_02_cannon_ghex_F",
+	"O_T_MBT_02_cannon_ghex_F",
+	"O_T_APC_Tracked_02_AA_ghex_F",
 	"O_Heli_Attack_02_F",
 	"O_Heli_Light_02_F",
 	"O_Heli_Transport_04_bench_F",
-	"O_Truck_03_transport_F"
+	"O_T_Truck_03_transport_ghex_F"
 ];
 if ( isNil "opfor_battlegroup_vehicles_extension" ) then { opfor_battlegroup_vehicles_extension = [] };
 if ( isNil "opfor_battlegroup_vehicles_overwrite" ) then { opfor_battlegroup_vehicles_overwrite = false };
 if ( opfor_battlegroup_vehicles_overwrite ) then { opfor_battlegroup_vehicles = opfor_battlegroup_vehicles_extension; } else { opfor_battlegroup_vehicles = opfor_battlegroup_vehicles + opfor_battlegroup_vehicles_extension; };
 
 opfor_battlegroup_vehicles_low_intensity = [
-	"O_APC_Tracked_02_cannon_F",
-	"O_APC_Wheeled_02_rcws_F",
-	"O_MRAP_02_hmg_F",
-	"O_MRAP_02_hmg_F",
-	"O_MRAP_02_gmg_F",
-	"O_Truck_03_covered_F",
+	"O_T_APC_Tracked_02_cannon_ghex_F",
+	"O_T_APC_Wheeled_02_rcws_F",
+	"O_T_MRAP_02_hmg_ghex_F",
+	"O_T_MRAP_02_hmg_ghex_F",
+	"O_T_MRAP_02_gmg_ghex_F",
+	"O_T_Truck_03_covered_ghex_F",
 	"O_Heli_Transport_04_bench_F",
-	"O_Truck_03_transport_F"
+	"O_T_Truck_03_transport_ghex_F"
 ];
 if ( isNil "opfor_battlegroup_vehicles_low_intensity_extension" ) then { opfor_battlegroup_vehicles_low_intensity_extension = [] };
 if ( isNil "opfor_battlegroup_vehicles_low_intensity_overwrite" ) then { opfor_battlegroup_vehicles_low_intensity_overwrite = false };
 if ( opfor_battlegroup_vehicles_low_intensity_overwrite ) then { opfor_battlegroup_vehicles_low_intensity = opfor_battlegroup_vehicles_low_intensity_extension; } else { opfor_battlegroup_vehicles_low_intensity = opfor_battlegroup_vehicles_low_intensity + opfor_battlegroup_vehicles_low_intensity_extension; };
 
 opfor_troup_transports = [
-	"O_APC_Wheeled_02_rcws_F",
-	"O_Truck_03_covered_F",
+	"O_T_APC_Wheeled_02_rcws_ghex_F",
+	"O_T_Truck_03_covered_ghex_F",
 	"O_Heli_Transport_04_bench_F",
-	"O_Truck_03_transport_F",
+	"O_T_Truck_03_transport_ghex_F",
 	"O_Heli_Light_02_F"
 ];
 if ( isNil "opfor_troup_transports_extension" ) then { opfor_troup_transports_extension = [] };
@@ -335,7 +335,8 @@ if ( isNil "opfor_choppers_overwrite" ) then { opfor_choppers_overwrite = false 
 if ( opfor_choppers_overwrite ) then { opfor_choppers = opfor_choppers_extension; } else { opfor_choppers = opfor_choppers + opfor_choppers_extension; };
 
 opfor_air = [
-	"O_Plane_CAS_02_F"
+	"O_Plane_CAS_02_F",
+	"O_T_VTOL_02_infantry_F"
 ];
 if ( isNil "opfor_air_extension" ) then { opfor_air_extension = [] };
 if ( isNil "opfor_air_overwrite" ) then { opfor_air_overwrite = false };
@@ -427,8 +428,8 @@ FCLIB_blacklisted_from_arsenal = [] + blacklisted_from_arsenal_extension + FCLIB
 box_transport_config = [
 	[ "B_T_Truck_01_transport_F", -6.5, [0,	-0.4,	0.4], [0,	-2.1,	0.4], [0,	-3.8,	0.4] ],
 	[ "B_T_Truck_01_covered_F", -6.5, [0,	-0.4,	0.4], [0,	-2.1,	0.4], [0,	-3.8,	0.4] ],
-	[ "O_Truck_03_transport_F", -6.5, [0,	-0.8,	0.4], [0,	-2.4,	0.4], [0,	-4.0,	0.4] ],
-	[ "O_Truck_03_covered_F", -6.5, [0,	-0.8,	0.4], [0,	-2.4,	0.4], [0,	-4.0,	0.4] ],
+	[ "O_T_Truck_03_transport_ghex_F", -6.5, [0,	-0.8,	0.4], [0,	-2.4,	0.4], [0,	-4.0,	0.4] ],
+	[ "O_T_Truck_03_covered_ghexF", -6.5, [0,	-0.8,	0.4], [0,	-2.4,	0.4], [0,	-4.0,	0.4] ],
 	[ "B_Heli_Transport_03_F", -7.5, [0,	2.2,	-1], [0,	0.8,	-1], [0,	-1.0, -1] ],
 	[ "B_Heli_Transport_03_unarmed_F", -7.5, [0,	2.2,	-1], [0,	0.8,	-1], [0,	-1.0, -1] ],
 	[ "I_Heli_Transport_02_F", -6.5, [0,	4.2,	-1.45], [0,	2.5,	-1.45], [0,	0.8, -1.45], [0,	-0.9, -1.45] ]
