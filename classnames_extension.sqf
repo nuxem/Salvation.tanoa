@@ -49,7 +49,11 @@ heavy_vehicles_extension = [
 
 air_vehicles_overwrite = false;
 air_vehicles_extension = [
-
+["MELB_MH6M",0,0,8],
+["MELB_AH6M_L",0,30,10],
+["MELB_AH6M_M",0,40,20],
+["MELB_AH6M_H",0,75,20],
+["MELB_H6M",0,0,5]
 ];
 
 static_vehicles_overwrite = false;
@@ -234,7 +238,7 @@ vehicle_refuel_sources_extension = [
 
 // Elite vehicles that should be unlocked through military base capture.
 elite_vehicles_extension = [
-
+	"MELB_AH6M_H"
 ];
 
 // Blacklisted arsenal items such as deployable weapons  that should be bought instead
