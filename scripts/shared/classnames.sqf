@@ -219,10 +219,10 @@ if ( isNil "opfor_sharpshooter") then { opfor_sharpshooter = "O_Sharpshooter_F";
 if ( isNil "opfor_sniper") then { opfor_sniper = "O_sniper_F"; };
 if ( isNil "opfor_engineer") then { opfor_engineer = "O_engineer_F"; };
 if ( isNil "opfor_paratrooper") then { opfor_paratrooper = "O_soldier_PG_F"; };
-if ( isNil "opfor_mrap") then { opfor_mrap = "O_MRAP_02_F"; };
-if ( isNil "opfor_mrap_armed") then { opfor_mrap_armed = "O_MRAP_02_gmg_F"; };
+if ( isNil "opfor_mrap") then { opfor_mrap = "O_T_MRAP_02_ghex_F"; };
+if ( isNil "opfor_mrap_armed") then { opfor_mrap_armed = "O_T_MRAP_02_gmg_ghex_F"; };
 if ( isNil "opfor_transport_helo") then { opfor_transport_helo = "O_Heli_Transport_04_bench_F"; };
-if ( isNil "opfor_transport_truck") then { opfor_transport_truck = "O_Truck_03_covered_F"; };
+if ( isNil "opfor_transport_truck") then { opfor_transport_truck = "O_T_Truck_03_covered_ghex_F"; };
 if ( isNil "opfor_fuel_truck") then { opfor_fuel_truck = "O_T_Truck_03_fuel_ghex_F"; };
 if ( isNil "opfor_ammo_truck") then { opfor_ammo_truck = "O_T_Truck_03_ammo_ghex_F"; };
 if ( isNil "opfor_fuel_container") then { opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F"; };
@@ -330,7 +330,8 @@ if ( isNil "opfor_choppers_overwrite" ) then { opfor_choppers_overwrite = false 
 if ( opfor_choppers_overwrite ) then { opfor_choppers = opfor_choppers_extension; } else { opfor_choppers = opfor_choppers + opfor_choppers_extension; };
 
 opfor_air = [
-	"O_Plane_CAS_02_F"
+	"O_Plane_CAS_02_F",
+	"O_T_VTOL_02_Infantry_F"
 ];
 if ( isNil "opfor_air_extension" ) then { opfor_air_extension = [] };
 if ( isNil "opfor_air_overwrite" ) then { opfor_air_overwrite = false };

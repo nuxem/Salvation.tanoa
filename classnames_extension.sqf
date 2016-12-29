@@ -33,19 +33,13 @@ pilot_classname = nil;					// Default "B_Helipilot_F";
 // If overwrite is set to true, then the extension list will entirely replace the original list defined in classnames.sqf. Otherwise it will be appended to it.
 // Useful for total conversions to RHS and such, without having to alter the original file.
 infantry_units_overwrite = false;
-infantry_units_extension = [
-
-];
+infantry_units_extension = nil;
 
 light_vehicles_overwrite = false;
-light_vehicles_extension = [
-
-];
+light_vehicles_extension = nil;
 
 heavy_vehicles_overwrite = false;
-heavy_vehicles_extension = [
-
-];
+heavy_vehicles_extension = nil;
 
 air_vehicles_overwrite = false;
 air_vehicles_extension = [
@@ -57,55 +51,36 @@ air_vehicles_extension = [
 ];
 
 static_vehicles_overwrite = false;
-static_vehicles_extension = [
-
-];
+static_vehicles_extension = nil;
 
 buildings_overwrite = false;
-buildings_extension = [
-
-];
+buildings_extension = nil;
 
 support_vehicles_overwrite = false;		// If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there
-support_vehicles_extension = [
-
-];
+support_vehicles_extension = nil;
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
 uavs = [
-
 ];
 
 // Pre-made squads for the commander build menu. These shouldn't exceed 10 members.
 // Light infantry squad
-blufor_squad_inf_light = [
-
-];
+blufor_squad_inf_light = nil;
 
 // Heavy infantry squad
-blufor_squad_inf = [
-
-];
+blufor_squad_inf = nil;
 
 // AT specialists squad
-blufor_squad_at = [
-
-];
+blufor_squad_at = nil;
 
 // AA specialists squad
-blufor_squad_aa = [
-
-];
+blufor_squad_aa = nil;
 
 // Force recon squad
-blufor_squad_recon = [
-
-];
+blufor_squad_recon = nil;
 
 // Paratroopers squad
-blufor_squad_para = [
-
-];
+blufor_squad_para = nil;
 
 
 
@@ -147,59 +122,40 @@ opfor_flag = nil;
 
 // Militia infantry. Soldier classnames the game will pick from randomly
 militia_squad_overwrite = false;
-militia_squad_extension = [
-
-];
+militia_squad_extension = nil;
 
 // Militia vehicles to choose from
 militia_vehicles_overwrite = false;
-militia_vehicles_extension = [
-
-];
+militia_vehicles_extension = nil;
 
 // All the vehicles that can spawn as sector defenders and patrols
 opfor_vehicles_overwrite = false;
-opfor_vehicles_extension = [
-
-];
+opfor_vehicles_extension = nil;
 
 // Same with lighter choices to be used  when the alert level is low
 opfor_vehicles_low_intensity_overwrite = false;
-opfor_vehicles_low_intensity_extension = [
-
-];
+opfor_vehicles_low_intensity_extension = nil;
 
 // All the vehicles that can spawn as battlegroup members
 opfor_battlegroup_vehicles_overwrite = false;
-opfor_battlegroup_vehicles_extension = [
-
-];
+opfor_battlegroup_vehicles_extension = nil;
 
 // Same with lighter choices to be used  when the alert level is low
 opfor_battlegroup_vehicles_low_intensity_overwrite = false;
-opfor_battlegroup_vehicles_low_intensity_extension = [
-
-];
+opfor_battlegroup_vehicles_low_intensity_extension = nil;
 
 // All the vehicles that can spawn as battlegroup members (see above) and also hold 8 soldiers as passengers.
 // If something in here can't hold all 8 soldiers then buggy behaviours may occur
 opfor_troup_transports_overwrite = false;
-opfor_troup_transports_extension = [
-
-];
+opfor_troup_transports_extension = nil;
 
 // Battlegroup members that will need to spawn in flight. Should be only helos but, who knows
 opfor_choppers_overwrite = false;
-opfor_choppers_extension = [
-
-];
+opfor_choppers_extension = nil;
 
 // Opfor military aircrafts
 opfor_air_overwrite = false;
-opfor_air_extension = [
-
-];
-
+opfor_air_extension = nil;
 
 
 
