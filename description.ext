@@ -5,7 +5,7 @@ disabledAI = true;
 enableDebugConsole = 1;
 allowFunctionsLog = 0;
 
-loadScreen="res\salvation.jpg";
+loadScreen="res\liberation.jpg";
 onLoadMission = $STR_MISSION_TITLE;
 author = "ForceCat, Nuxem";
 onLoadName = $STR_MISSION_TITLE;
@@ -23,6 +23,154 @@ class Header
 #include "ui\salvation_interface.hpp"
 #include "ui\salvation_notifications.hpp"
 #include "ui\mission_params.hpp"
+
+class ACE_Settings {    
+	class ace_medical_increaseTrainingInLocations {
+		value = 1;
+		typeName = "BOOL";
+		force = 0;
+	};
+	class ace_medical_enableFor {
+		value = 0;
+		typeName = "SCALAR";
+		force = 0;
+	};
+	class ace_medical_enableOverdosing {
+		value = 1;
+		typeName = "BOOL";
+		force = 0;
+	};
+	class ace_medical_bleedingCoefficient {
+		value = 1;
+		typeName = "SCALAR";
+		force = 0;
+	};
+	class ace_medical_painCoefficient {
+		value = 1;
+		typeName = "SCALAR";
+		force = 0;
+	};
+	class ace_medical_enableAdvancedWounds {
+		value = 1;
+		typeName = "BOOL";
+		force = 0;
+	};
+	class ace_medical_enableVehicleCrashes {
+		value = 1;
+		typeName = "BOOL";
+		force = 0;
+	};
+	class ace_medical_enableScreams {
+		value = 1;
+		typeName = "BOOL";
+		force = 0;
+	};
+	class ace_medical_playerDamageThreshold {
+		value = 1;
+		typeName = "SCALAR";
+		force = 0;
+	};
+	class ace_medical_enableUnconsciousnessAI {
+		value = 1;
+		typeName = "SCALAR";
+		force = 0;
+	};
+	class ace_medical_remoteControlledAI {
+		value = 1;
+		typeName = "BOOL";
+		force = 0;
+	};
+	class ace_medical_preventInstaDeath {
+		value = 0;
+		typeName = "BOOL";
+		force = 0;
+	};
+	
+	// Stamina
+	class ace_advanced_fatigue_enabled {
+    value = 1;
+    typeName = "BOOL";
+    force = 1;
+	};
+	class ace_advanced_fatigue_performanceFactor {
+		value = 1.3;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_advanced_fatigue_recoveryFactor {
+		value = 1.6;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_advanced_fatigue_loadFactor {
+		value = 0.7;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_advanced_fatigue_terrainGradientFactor {
+		value = 0.8;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	
+	// Repair
+	class ace_overheating_enabled {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_rearm_level {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_engineerSetting_repair {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_engineerSetting_wheel {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_repairDamageThreshold {
+		value = 0.6;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_repairDamageThreshold_engineer {
+		value = 0.2;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_consumeItem_toolKit {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_fullRepairLocation {
+		value = 3;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_engineerSetting_fullRepair {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_addSpareParts {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_repair_wheelRepairRequiredItems {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+};
+
 
 class CfgDebriefing
 {
