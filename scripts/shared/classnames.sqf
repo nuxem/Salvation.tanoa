@@ -108,6 +108,7 @@ if ( isNil "static_vehicles_overwrite" ) then { static_vehicles_overwrite = fals
 if ( static_vehicles_overwrite ) then { static_vehicles = static_vehicles_extension; } else { static_vehicles = static_vehicles + static_vehicles_extension; };
 
 buildings = [
+	["ACE_Wheel",0,0,0],
 	["Land_CncBarrierMedium4_F",0,0,0],
 	["Land_CncWall4_F",0,0,0],
 	["Land_CncShelter_F",0,0,0],
