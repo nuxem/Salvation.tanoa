@@ -8,9 +8,6 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessFileLineNUmbers "classnames_extension.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\classnames.sqf";
 
-//BTC TK PUNISH init
-[] call compile preprocessFile "=BTC=_TK_punishment\=BTC=_tk_init.sqf";
-
 
 [] execVM "FCFramework\scripts\FCFramework_activate.sqf";
 
@@ -31,9 +28,6 @@ if (!isDedicated && hasInterface) then {
 } else {
 	setViewDistance 1600;
 };
-
-// Interior lighting init
-//nul=[] execVM "IntLight.sqf";
 
 //Init jump feature
 execvm "jump.sqf";
