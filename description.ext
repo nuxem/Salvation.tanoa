@@ -5,7 +5,7 @@ disabledAI = true;
 enableDebugConsole = 1;
 allowFunctionsLog = 0;
 
-loadScreen="res\liberation.jpg";
+loadScreen="res\salvation.jpg";
 onLoadMission = $STR_MISSION_TITLE;
 author = "ForceCat, Nuxem";
 onLoadName = $STR_MISSION_TITLE;
