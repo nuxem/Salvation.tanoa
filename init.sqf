@@ -31,3 +31,5 @@ if (!isDedicated && hasInterface) then {
 
 //Init jump feature
 execvm "jump.sqf";
+
+[] execVM "INSLimitedAdmin\initAH.sqf";
