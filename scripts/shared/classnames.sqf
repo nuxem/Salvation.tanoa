@@ -245,7 +245,7 @@ militia_squad = [
 	"I_C_Soldier_Bandit_3_F",
 	"I_C_Soldier_Bandit_1_F",
 	"I_C_Soldier_Bandit_8_F",
-	"I_C_Soldier_Bandit_8_F",
+	"I_C_Soldier_Bandit_2_F",
 	"I_C_Soldier_Bandit_6_F",
 	"I_C_Soldier_Bandit_5_F",
 	"I_C_Soldier_Bandit_4_F",
