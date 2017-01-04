@@ -259,8 +259,7 @@ if ( isNil "militia_squad_overwrite" ) then { militia_squad_overwrite = false };
 if ( militia_squad_overwrite ) then { militia_squad = militia_squad_extension; } else { militia_squad = militia_squad + militia_squad_extension; };
 
 militia_vehicles = [
-	"O_G_Offroad_01_armed_F";
-	"O_T_LSV_02_armed_F"
+	"O_G_Offroad_01_armed_F"
 ];
 if ( isNil "militia_vehicles_extension" ) then { militia_vehicles_extension = [] };
 if ( isNil "militia_vehicles_overwrite" ) then { militia_vehicles_overwrite = false };
