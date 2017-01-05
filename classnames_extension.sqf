@@ -126,7 +126,9 @@ militia_squad_extension = nil;
 
 // Militia vehicles to choose from
 militia_vehicles_overwrite = false;
-militia_vehicles_extension = nil;
+militia_vehicles_extension = [
+"O_T_LSV_02_armed_F"
+];
 
 // All the vehicles that can spawn as sector defenders and patrols
 opfor_vehicles_overwrite = false;

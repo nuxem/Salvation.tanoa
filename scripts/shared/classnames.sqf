@@ -237,20 +237,22 @@ if ( isNil "opfor_fuel_container") then { opfor_fuel_container = "Land_Pod_Heli_
 if ( isNil "opfor_ammo_container") then { opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F"; };
 if ( isNil "opfor_flag") then { opfor_flag = "Flag_CSAT_F"; };
 
+//Defualt setup; Opfor Guerilla
+// SL,A,AR,Med,Engi,Exp,GL,M,RM,LAT,Lite,SShoot,TL
 militia_squad = [
-	"O_G_Soldier_SL_F",
-	"O_G_Soldier_A_F",
-	"O_G_Soldier_AR_F",
-	"O_G_medic_F",
-	"O_G_engineer_F",
-	"O_G_Soldier_exp_F",
-	"O_G_Soldier_GL_F",
-	"O_G_Soldier_M_F",
-	"O_G_Soldier_F",
-	"O_G_Soldier_LAT_F",
-	"O_G_Soldier_lite_F",
-	"O_G_Sharpshooter_F",
-	"O_G_Soldier_TL_F"
+	"I_C_Soldier_Bandit_6_F",
+	"I_C_Soldier_Bandit_3_F",
+	"I_C_Soldier_Bandit_3_F",
+	"I_C_Soldier_Bandit_1_F",
+	"I_C_Soldier_Bandit_8_F",
+	"I_C_Soldier_Bandit_2_F",
+	"I_C_Soldier_Bandit_6_F",
+	"I_C_Soldier_Bandit_2_F",
+	"I_C_Soldier_Bandit_4_F",
+	"I_C_Soldier_Bandit_2_F",
+	"I_C_Soldier_Bandit_2_F",
+	"I_C_Soldier_Bandit_4_F",
+	"I_C_Soldier_Bandit_6_F"
 ];
 if ( isNil "militia_squad_extension" ) then { militia_squad_extension = [] };
 if ( isNil "militia_squad_overwrite" ) then { militia_squad_overwrite = false };
